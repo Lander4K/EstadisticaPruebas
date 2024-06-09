@@ -16,8 +16,7 @@ def desbideracion_tipica(n: int, media: float, sum:float) -> float:
 def coeficiente_variacion(media: float, desbideracion: float) -> float:
     return desbideracion/media
 
-def main_discreto():
-    datos = 'archivo.txt'
+def main_discreto(datos):
     datos = leer_datos(datos)
 
     frecuencias = Counter(datos)
@@ -43,3 +42,7 @@ def main_discreto():
     print(f"La media aritmetica es {media}")
     print(f"La desbideración típica es {desbideracion}")
     print(f"El coeficiente de variación es del {int(coeficiente)}%")
+
+if __name__ == '__main__':
+    archivo: str = input("Ingrese el nombre del archivo: ")
+    main_discreto(archivo)
