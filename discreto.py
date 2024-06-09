@@ -1,3 +1,4 @@
+from collections import Counter
 import math
 
 def leer_datos(file_path: str) -> list[int]:

@@ -1,6 +1,7 @@
 from collections import Counter
 import math
 from discreto import *
+from continuo import *
 
 def main():
     eleccion: int = int(input("Prefieres usar el método discreto (1) o el continuo (2)?: "))
